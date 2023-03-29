@@ -1,5 +1,5 @@
 # Install and use AWS-based Wireguard
-Scripts automate the installation and use of Wireguard on AWS with Ubuntu Server 18.04
+Scripts automate the installation and use of Wireguard on AWS with Ubuntu Server 22.04
 
 ## How use
 
@@ -19,6 +19,8 @@ The `initial.sh` script removes the previous Wireguard installation (if any) usi
 sudo ./add-client.sh
 #OR
 sudo ./add-client.sh $CLIENT_NAME
+#OR Pipe to File
+./add-client.sh student02 > student02.conf
 ```
 
 ### Reset customers
